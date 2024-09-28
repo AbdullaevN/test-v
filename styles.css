@@ -243,6 +243,7 @@ header {
   .slide img {
     width: 100%; /* Ensure images take full width */
     height: auto; /* Maintain aspect ratio */
+    margin: 20px 0;
   }
 }
 
@@ -465,6 +466,9 @@ footer {
   /* Adjust styles for mobile devices */
   .top-buttons .btn {
     font-size: 14px;
+    width: 100%;
+    padding: auto;
+    margin: auto;
   }
   .top-row{
     flex-wrap: wrap;
@@ -661,6 +665,7 @@ display: none;
 .product img {
   width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .product p {
@@ -688,6 +693,19 @@ display: none;
 
   .product {
     width: 48%; /* Устанавливаем ширину на 48% для двух элементов в строке */
+    margin-bottom: 20px; /* Добавляем пространство между строками */
+  }
+}
+/* Media queries */
+@media (max-width: 480px) {
+  /* Для мобильных устройств */
+  .products {
+    flex-direction: row; /* Держим элементы в строку */
+    justify-content: space-between; /* Центрируем продукты на меньших экранах */
+  }
+
+  .product {
+    width: 45%; /* Устанавливаем ширину на 48% для двух элементов в строке */
     margin-bottom: 20px; /* Добавляем пространство между строками */
   }
 }
