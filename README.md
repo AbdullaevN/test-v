@@ -4,10 +4,5 @@
 git clone https://github.com/AbdullaevN/test-v.git
 
 
-cd test-v
-
-
-npm install
-
-
-npm start
+Clone the repository.
+Open index.html in a web browser.
